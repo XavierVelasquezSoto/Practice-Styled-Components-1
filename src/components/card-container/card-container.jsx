@@ -1,10 +1,19 @@
-const CardContainer = ({ img, title, textInfo }) => {
+import {
+	StyledDiv,
+	StyledImg,
+	StyledTitle,
+	StyledText,
+	StyledButton
+} from './card-container.styles';
+
+const CardContainer = ({ bodyColor, img, title, textInfo, button }) => {
 	return (
-		<div>
-			<img src={img} alt='' />
-			<h1>{title}</h1>
-			<p>{textInfo}</p>
-		</div>
+		<StyledDiv $bodyColor={bodyColor}>
+			<StyledImg src={img} />
+			<StyledTitle>{title}</StyledTitle>
+			<StyledText>{textInfo}</StyledText>
+			<StyledButton $button={bodyColor}>{button}</StyledButton>
+		</StyledDiv>
 	);
 };
 

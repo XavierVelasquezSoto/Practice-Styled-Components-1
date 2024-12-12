@@ -13,10 +13,12 @@ const App = () => {
 					console.log(CARD_INFO);
 					return (
 						<CardContainer
+							bodyColor={cardInfo.bodyColor}
 							key={cardInfo.id}
 							img={cardInfo.img}
 							title={cardInfo.title}
 							textInfo={cardInfo.textInfo}
+							button={cardInfo.button}
 						/>
 					);
 				})}
