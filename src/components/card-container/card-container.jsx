@@ -4,7 +4,7 @@ import {
 	StyledTitle,
 	StyledText,
 	StyledButton
-} from './card-container.styles';
+} from './Card-container.styles';
 
 const CardContainer = ({ bodyColor, img, title, textInfo, button }) => {
 	return (
