@@ -3,7 +3,7 @@ import { v4 } from 'uuid';
 export const CARD_INFO = [
 	{
 		id: v4(),
-		bodyColor: 'sedans',
+		color: '#E28625',
 		img: '/assets/images/sedan.svg',
 		title: 'SEDANS',
 		textInfo:
@@ -12,7 +12,7 @@ export const CARD_INFO = [
 	},
 	{
 		id: v4(),
-		bodyColor: 'suvs',
+		color: '#006971',
 		img: '/assets/images/suv.svg',
 		title: 'SUVS',
 		textInfo:
@@ -21,7 +21,7 @@ export const CARD_INFO = [
 	},
 	{
 		id: v4(),
-		bodyColor: 'luxury',
+		color: '#004140',
 		img: '/assets/images/luxury.svg',
 		title: 'LUXURY',
 		textInfo:

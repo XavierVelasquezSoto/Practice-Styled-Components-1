@@ -2,11 +2,7 @@ import styled from 'styled-components';
 
 const StyledDiv = styled.div`
 	height: 442px;
-	background-color: ${props => {
-		if (props.$bodyColor === 'sedans') return '#E28625';
-		if (props.$bodyColor === 'suvs') return '#006971';
-		if (props.$bodyColor === 'luxury') return '#004140';
-	}};
+	background-color: ${props => props.$color};
 	padding: 48px;
 `;
 
@@ -37,22 +33,10 @@ const StyledButton = styled.button`
 	border-radius: 30px;
 	border: none;
 	background-color: #fff;
-	color: ${props => {
-		if (props.$button === 'sedans') return '#E28625';
-		if (props.$button === 'suvs') return '#006971';
-		if (props.$button === 'luxury') return '#004140';
-	}};
+	color: ${props => props.$color};
 	&:hover {
-		background-color: ${props => {
-			if (props.$button === 'sedans') return '#E28625';
-			if (props.$button === 'suvs') return '#006971';
-			if (props.$button === 'luxury') return '#004140';
-		}};
-		color: ${props => {
-			if (props.$button === 'sedans') return '#fff';
-			if (props.$button === 'suvs') return '#fff';
-			if (props.$button === 'luxury') return '#fff';
-		}};
+		background-color: transparent;
+		color: #fff;
 		border: 1px solid #fff;
 	}
 `;

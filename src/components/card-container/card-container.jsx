@@ -6,13 +6,13 @@ import {
 	StyledButton
 } from './Card-container.styles';
 
-const CardContainer = ({ bodyColor, img, title, textInfo, button }) => {
+const CardContainer = ({ color, img, title, textInfo, button }) => {
 	return (
-		<StyledDiv $bodyColor={bodyColor}>
+		<StyledDiv $color={color}>
 			<StyledImg src={img} />
 			<StyledTitle>{title}</StyledTitle>
 			<StyledText>{textInfo}</StyledText>
-			<StyledButton $button={bodyColor}>{button}</StyledButton>
+			<StyledButton $color={color}>{button}</StyledButton>
 		</StyledDiv>
 	);
 };
