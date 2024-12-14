@@ -1,5 +1,5 @@
 // import Button from './components/button/Button';
-import CardContainer from './components/card-container/Card-container';
+import CardContainer from './components/card-container/card-container';
 import CardFlex from './components/card-flex/Card-flex';
 import { CARD_INFO } from './constants/cardInfo';
 import { GlobalStyles } from './styles/GlobalStyles';
